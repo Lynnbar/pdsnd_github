@@ -9,6 +9,10 @@ Explore data related for bikeshare platform for three major cities in the United
 
 The program is based on user input
 
+### Running the file
+To run the file please open your terminal
+and run the command 'python bikshare.py'
+
 ### Files used
 Chicago Data - chicago.csv
 NY City Data - new_york_city.csv
