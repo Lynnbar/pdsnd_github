@@ -5,7 +5,7 @@ March 30, 2019
 Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Explore data related for bikeshare platform for three major cities in the United States - Chicago, New York City and Washington. This is the final Project for Udacity's Programming for Data Science Nanodegree Program.
 
 ### Files used
 Include the files used
