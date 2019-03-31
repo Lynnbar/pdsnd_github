@@ -8,6 +8,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 MONTH_LIST = ['january', 'february', 'march', 'april', 'may', 'june']
 
+DAY_LIST = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday', 'sunday']
+
 # This function asks for the user for the city and returns the name of the csv file
 # to read
 def ask_city():
@@ -57,10 +59,10 @@ def ask_time():
         # Ask user for the day
         elif time_frame == 'day':
           day = ''
-          while day not in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday', 'sunday'):
+          while day not in DAY_LIST:
             day = input('Which Day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?:\n')
             day = day.lower()
-            if day in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
+            if day in DAY_LIST:
               month = 'all'
             else:
               print('Sorry this is an invalid input\n')
