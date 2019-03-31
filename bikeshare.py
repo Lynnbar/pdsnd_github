@@ -6,6 +6,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+MONTH_LIST = ['january', 'february', 'march', 'april', 'may', 'june']
+
 # This function asks for the user for the city and returns the name of the csv file
 # to read
 def ask_city():
@@ -44,10 +46,10 @@ def ask_time():
         # Ask user for the month
         if time_frame == 'month':
           month = ''
-          while month not in ('january', 'february', 'march', 'april', 'may', 'june'):
+          while month not in MONTH_LIST:
             month = input('Which month? January, February, March, April, May, or June?:\n')
             month = month.lower()
-            if month in ['january', 'february','march', 'april','may','june']:
+            if month in MONTH_LIST:
               day = 'all'
             else:
               print('Sorry this is an invalid input\n')
